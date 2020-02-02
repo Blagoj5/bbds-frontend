@@ -1,0 +1,115 @@
+.container {
+  margin: auto;
+  padding: 0;
+  max-width: $max-width;
+  overflow: hidden;
+}
+
+// Text
+.text-primary {
+  color: $primary-colour;
+}
+.text-secondary {
+  color: $secondary-colour;
+}
+.text-dark {
+  color: $dark-colour;
+}
+.text-light {
+  color: $light-colour;
+}
+
+.text-leading {
+  font-size: 1.15rem;
+}
+
+.h1-leading {
+  font-size: 2.5rem;
+}
+
+.text-center {
+  text-align: center;
+}
+
+// Padding, margins
+.py-1 {
+  padding: 1rem 0;
+}
+.py-2 {
+  padding: 1.5rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+.p-1 {
+  padding: 1rem 0;
+}
+.p-2 {
+  padding: 2rem 0;
+}
+.p-3 {
+  padding: 3rem 0;
+}
+
+.my-1 {
+  margin: 1rem 0;
+}
+.my-2 {
+  margin: 1.5rem 0;
+}
+.my-3 {
+  margin: 3rem 0;
+}
+
+// Button
+%btn-shared {
+  display: inline-block;
+  padding: 0.8rem 2rem;
+  transition: all 0.5s;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn {
+  @extend %btn-shared;
+  background: $light-colour;
+  color: #333;
+
+  &-primary {
+    background: $primary-colour;
+    color: #fff;
+    border-radius: 10px;
+
+    &:hover {
+      background: darken($color: $primary-colour, $amount: 8);
+    }
+  }
+  &-secondary {
+    background: $secondary-colour;
+    color: #fff;
+    border-radius: 10px;
+
+    &:hover {
+      background: darken($color: $secondary-colour, $amount: 8);
+    }
+  }
+}
+
+// Background colour
+.bg-primary {
+  background: $primary-colour;
+  color: #fff;
+}
+.bg-secondary {
+  background: $secondary-colour;
+  color: #fff;
+}
+.bg-dark {
+  background: $dark-colour;
+  color: #fff;
+}
+.bg-light {
+  background: $light-colour;
+  color: #fff;
+}

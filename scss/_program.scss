@@ -1,0 +1,117 @@
+#program {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 8rem 1rem;
+    padding-bottom: 0;
+    margin-bottom: 1.5rem;
+    h1 {
+        font-size: 3rem;
+        margin-bottom: 2rem;
+    }
+    p {
+        font-size: 1.2rem;
+        font-weight: 150;
+        line-height: 1.7rem;
+    }
+    &-athlete {
+        &-img {
+            text-align: center;
+            height: 80vh;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: all 0.3s;
+            p {
+                padding-left: 17px;
+                font-weight: 180;
+            }
+            img {
+                margin-bottom: 1rem;
+            }
+            &:hover {
+                box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+            }
+            .social .fab {
+                font-size: 2rem;
+                color: $secondary-color;
+                margin-left: 1rem;
+                transition: color 0.3s;
+                &:hover {
+                    color: #333333;
+                }
+            }
+        }
+        &-description {
+            p {
+                padding-right: 1rem;
+            }
+        }
+    }
+    &-table {
+        align-self: center;
+        grid-column: 1 / span 2;
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            text-transform: uppercase;
+        }
+        h3 {
+            font-size: 1.3rem;
+            padding: 1rem 0.2rem;
+        }
+        div {
+            background: #f4f4f4;
+            // margin-bottom: 3rem;
+            div {
+                display: grid;
+                align-items: stretch;
+                justify-content: stretch;
+                grid-template-columns: repeat(9, 1fr);
+                // grid-auto-flow: column;
+                // Background with straped
+                // background-image: linear-gradient(155deg, #f4f4f4 31.25%, #cccccc 31.25%, #cccccc 50%, #f4f4f4 50%, #f4f4f4 81.25%, #cccccc 81.25%, #cccccc 100%);
+                // background-size: 75.72px 35.31px;
+                background: inherit;
+                border: 1px solid #333333;
+                border-radius: 5px;
+                padding: 0 0.2rem;
+                p {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    height: 55px;
+                    border-right: inherit;
+                    border-radius: 0 !important;
+                    z-index: 3;
+                }
+                p:nth-child(n+9) {
+                    border-right: none;
+                }
+                p:nth-child(even) {
+                    background: #ccc;
+                    border-radius: 5px;
+                }
+                p:nth-child(odd) {
+                    background: #f4f4f4;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
+
+#paginator-program {
+    @extend %paginator;
+    row-gap: 0;
+    justify-content: center;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+    a {
+        margin-left: 4rem;
+    }
+    i {
+        width: 55px;
+        height: 55px;
+        line-height: 49px;
+        color: #333333;
+    }
+}

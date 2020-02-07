@@ -1,115 +1,156 @@
 .container {
-  margin: auto;
-  padding: 0;
-  max-width: $max-width;
-  overflow: hidden;
+    margin: auto;
+    padding: 0;
+    max-width: $max-width;
+    overflow: hidden;
 }
 
 // Text
 .text-primary {
-  color: $primary-colour;
+    color: $primary-color;
 }
+
 .text-secondary {
-  color: $secondary-colour;
+    color: $secondary-color !important;
 }
+
 .text-dark {
-  color: $dark-colour;
+    color: $dark-color;
 }
+
 .text-light {
-  color: $light-colour;
+    color: $light-color;
 }
 
 .text-leading {
-  font-size: 1.15rem;
+    font-size: 1.15rem;
 }
 
 .h1-leading {
-  font-size: 2.5rem;
+    font-size: 2.5rem;
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
 // Padding, margins
 .py-1 {
-  padding: 1rem 0;
+    padding: 1rem 0;
 }
+
 .py-2 {
-  padding: 1.5rem 0;
+    padding: 1.5rem 0;
 }
+
 .py-3 {
-  padding: 3rem 0;
+    padding: 3rem 0;
 }
+
 .p-1 {
-  padding: 1rem 0;
+    padding: 1rem;
 }
+
 .p-2 {
-  padding: 2rem 0;
+    padding: 2rem;
 }
+
 .p-3 {
-  padding: 3rem 0;
+    padding: 3rem;
 }
 
 .my-1 {
-  margin: 1rem 0;
+    margin: 1rem 0;
 }
+
 .my-2 {
-  margin: 1.5rem 0;
+    margin: 1.5rem 0;
 }
+
 .my-3 {
-  margin: 3rem 0;
+    margin: 3rem 0;
 }
 
 // Button
 %btn-shared {
-  display: inline-block;
-  padding: 0.8rem 2rem;
-  transition: all 0.5s;
-  border: none;
-  cursor: pointer;
-  text-align: center;
+    display: inline-block;
+    padding: 0.8rem 2rem;
+    transition: all 0.5s;
+    border: none;
+    cursor: pointer;
+    text-align: center;
 }
 
 .btn {
-  @extend %btn-shared;
-  background: $light-colour;
-  color: #333;
-
-  &-primary {
-    background: $primary-colour;
-    color: #fff;
-    border-radius: 10px;
-
-    &:hover {
-      background: darken($color: $primary-colour, $amount: 8);
+    @extend %btn-shared;
+    background: $light-color;
+    color: #333;
+    &-primary {
+        background: $primary-color;
+        color: #fff;
+        border-radius: 10px;
+        &:hover {
+            background: darken($color: $primary-color, $amount: 8);
+        }
     }
-  }
-  &-secondary {
-    background: $secondary-colour;
-    color: #fff;
-    border-radius: 10px;
-
-    &:hover {
-      background: darken($color: $secondary-colour, $amount: 8);
+    &-secondary {
+        background: $secondary-color;
+        color: #fff;
+        border-radius: 10px;
+        &:hover {
+            background: darken($color: $secondary-color, $amount: 8);
+        }
     }
-  }
 }
 
-// Background colour
+// Background color
 .bg-primary {
-  background: $primary-colour;
-  color: #fff;
+    background: $primary-color;
+    color: #fff;
 }
+
 .bg-secondary {
-  background: $secondary-colour;
-  color: #fff;
+    background: $secondary-color;
+    color: #fff;
 }
+
 .bg-dark {
-  background: $dark-colour;
-  color: #fff;
+    background: $dark-color;
+    color: #fff;
 }
+
 .bg-light {
-  background: $light-colour;
-  color: #fff;
+    background: $light-color;
+    color: #fff;
+}
+
+// 
+%paginator {
+    font-size: 2.5rem;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0;
+    padding-right: 1rem;
+    a {
+        margin-left: 1.5rem;
+    }
+    i {
+        transition: all 0.2s;
+        border: 3px $dark-color solid;
+        border-radius: 50%;
+        width: 39px;
+        height: 39px;
+        line-height: 34px;
+        text-align: center;
+        &:hover {
+            background: $primary-color;
+        }
+    }
+    .arrow-l .fas {
+        padding-right: 4px !important;
+    }
+    .arrow-r .fas {
+        padding-left: 4px !important;
+    }
 }

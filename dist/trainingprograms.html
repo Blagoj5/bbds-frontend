@@ -1,203 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
 
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <title>Body Building Documentation Site | Landing Page</title>
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Body Building Documentation Site | Landing Page</title>
 
-        <!-- FONT AWESOME [DOWNLAOD IT LOCALLY IN THE FUTURE] -->
-        <script src="https://kit.fontawesome.com/bbeff548df.js" crossorigin="anonymous"></script>
-        <!-- FONT ADD LOCALLY -->
-        <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="css/main.css" />
-    </head>
+    <!-- FONT AWESOME [DOWNLAOD IT LOCALLY IN THE FUTURE] -->
+    <script src="https://kit.fontawesome.com/bbeff548df.js" crossorigin="anonymous"></script>
+    <!-- FONT ADD LOCALLY -->
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
 
-    <body>
-        <!-- Navbar -->
-        <nav id="navbar">
-            <div id="navbar-logo">
-                <a href="trainingprogram.html">
-                    <img src="img/logo.svg" alt="" />
-                </a>
+<body>
+    <!-- Navbar -->
+    <nav id="navbar">
+        <div id="navbar-logo">
+            <a href="trainingprogram.html">
+                <img src="img/logo.svg" alt="" />
+            </a>
+        </div>
+        <div id="navbar-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li>
+                    <a href="trainingprograms.html" class="current">Training Programs</a>
+                </li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+            <div id="navbar-menu-user">
+                <a href="login.html" class="btn btn-primary">Log In</a>
+                <a href="register.html" class="btn btn-primary">Register</a>
             </div>
-            <div id="navbar-menu">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li>
-                        <a href="trainingprograms.html" class="current">Training Programs</a
-            >
-          </li>
-          <li><a href="about.html">About</a></li>
-                </ul>
-                <div id="navbar-menu-user">
-                    <a href="login.html" class="btn btn-primary">Log In</a>
-                    <a href="register.html" class="btn btn-primary">Register</a>
-                </div>
-            </div>
-        </nav>
+        </div>
+    </nav>
 
-        <!-- Section: training programs -->
-        <section id="available-programs" class="p-2">
-            <h1 class="py-2">Available <span class="text-primary">Programs</span></h1>
-            <div id="search">
-                <form action="" method="get">
-                    <input type="search" name="" id="" placeholder="Browse for any program" />
-                    <button type="submit" class="btn btn-primary">
-            <i class="fas fa-search fa-2x text-center"></i>
-          </button>
-                </form>
+    <!-- Section: training programs -->
+    <section id="available-programs" class="p-2">
+        <h1 class="py-2">Available <span class="text-primary">Programs</span></h1>
+        <div id="search">
+            <form action="" method="get">
+                <input type="search" name="" id="" placeholder="Browse for any program" />
+                <button type="submit" class="btn btn-primary">
+                    <i class="fas fa-search fa-2x text-center"></i>
+                </button>
+            </form>
+            <div id="filters">
+                <button>
+                    <!-- Arrow down when button is clicked and shows new form for filtering !! -->
+                    <div>Filter</div>
+                    <div><i class="fas fa-mars"></i><i class="fas fa-venus"></i><i class="fas fa-dumbbell"></i><i
+                            class="fas fa-weight-hanging"></i><i class="fas fa-balance-scale"></i></div>
+                </button>
             </div>
-            <div class="container">
-                <div id="card">
-                    <div id="card-title" class="bg-primary">
-                        <a href="trainingprogram.html"> <i class="fas fa-dumbbell fa-4x"></i> </a>
-                    </div>
-                    <div id="card-content">
-                        <h2><a href="trainingprogram.html">Chris Bumpstead</a></h2>
-                        <p><a href="trainingprogram.html">Push Pull Legs</a></p>
-                        <div>
-                            <p>4 Weeks</p>
-                            <form action="#" method="post">
-                                <button type="submit" class="normal" onclick="myFunction(this)">
-                  <i class="fas fa-angle-double-down"></i>
-                </button>
-                            </form>
+        </div>
+        <div class="container">
+            <div id="card">
+                <div id="card-title">
+                    <a href="trainingprogram.html"> 
+                        <img src="img/arnold.jpg" alt="">
+                        <div>                        
+                            <i class="fas fa-dumbbell fa-3x"></i> 
                         </div>
+                    </a>
+                </div>
+                <div id="card-content">
+                    <h2><a href="trainingprogram.html">Chris Bumpstead</a></h2>
+                    <p><a href="trainingprogram.html">Push Pull Legs</a></p>
+                    <div>
+                        <p>4 Weeks</p>
+                        <form action="#" method="post">
+                            <button type="submit" class="normal" onclick="myFunction(this)">
+                                <i class="fas fa-angle-double-down"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
-                <div id="card">
-                    <div id="card-title" class="bg-primary">
-                        <a href="trainingprogram.html"> <i class="fas fa-dumbbell fa-4x"></i> </a>
-                    </div>
-                    <div id="card-content">
-                        <h2><a href="trainingprogram.html">Chris Bumpstead</a></h2>
-                        <p><a href="trainingprogram.html">Push Pull Legs</a></p>
-                        <div>
-                            <p>4 Weeks</p>
-                            <form action="#" method="post">
-                                <button type="submit" class="liked">
-                  <i class="fas fa-angle-double-down"></i>
-                </button>
-                            </form>
+            </div>
+            <div id="card">
+                <div id="card-title">
+                    <a href="trainingprogram.html"> 
+                        <img src="img/jeffseid.jpg" alt="">
+                        <div>                        
+                            <i class="fas fa-dumbbell fa-3x"></i> 
                         </div>
+                    </a>
+                </div>
+                <div id="card-content">
+                    <h2><a href="trainingprogram.html">Chris Bumpstead</a></h2>
+                    <p><a href="trainingprogram.html">Push Pull Legs</a></p>
+                    <div>
+                        <p>4 Weeks</p>
+                        <form action="#" method="post">
+                            <button type="submit" class="liked">
+                                <i class="fas fa-angle-double-down"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
-                <div id="card">
-                    <div id="card-title" class="bg-primary">
-                        <a href="trainingprogram.html"> <i class="fas fa-dumbbell fa-4x"></i> </a>
-                    </div>
-                    <div id="card-content">
-                        <h2><a href="trainingprogram.html">Chris Bumpstead</a></h2>
-                        <p><a href="trainingprogram.html">Push Pull Legs</a></p>
-                        <div>
-                            <p>4 Weeks</p>
-                            <form action="#" method="post">
-                                <button type="submit" class="liked">
-                  <i class="fas fa-angle-double-down"></i>
-                </button>
-                            </form>
+            </div>
+            <div id="card">
+                <div id="card-title">
+                    <a href="trainingprogram.html"> 
+                        <img src="img/maxresdefault.jpg" alt="">
+                        <div href="trainingprogram.html"> 
+                            <i class="fas fa-dumbbell fa-3x"></i> 
                         </div>
+                    </a>
+                </div>
+                <div id="card-content">
+                    <h2><a href="trainingprogram.html">Chris Bumpstead</a></h2>
+                    <p><a href="trainingprogram.html">Push Pull Legs</a></p>
+                    <div>
+                        <p>4 Weeks</p>
+                        <form action="#" method="post">
+                            <button type="submit" class="liked">
+                                <i class="fas fa-angle-double-down"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
-                <div id="card">
-                    <div id="card-title" class="bg-primary">
-                        <a href="trainingprogram.html"> <i class="fas fa-dumbbell fa-4x"></i> </a>
-                    </div>
-                    <div id="card-content">
-                        <h2><a href="trainingprogram.html">Chris Bumpstead</a></h2>
-                        <p><a href="trainingprogram.html">Push Pull Legs</a></p>
-                        <div>
-                            <p>4 Weeks</p>
-                            <form action="#" method="post">
-                                <button type="submit" class="liked">
-                  <i class="fas fa-angle-double-down"></i>
-                </button>
-                            </form>
+            </div>
+            <div id="card">
+                <div id="card-title">
+                    <a href="trainingprogram.html"> 
+                        <img src="img/download.jpeg" alt="No picture available">
+                        <div href="trainingprogram.html"> 
+                            <i class="fas fa-dumbbell fa-3x"></i> 
                         </div>
+                    </a>
+                </div>
+                
+                <div id="card-content">
+                    <h2><a href="trainingprogram.html">Chris Bumpstead</a></h2>
+                    <p><a href="trainingprogram.html">Push Pull Legs</a></p>
+                    <div>
+                        <p>4 Weeks</p>
+                        <form action="#" method="post">
+                            <button type="submit" class="liked">
+                                <i class="fas fa-angle-double-down"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
-                <div id="card">
-                    <div id="card-title" class="bg-primary">
-                        <a href="trainingprogram.html"> <i class="fas fa-dumbbell fa-4x"></i> </a>
-                    </div>
-                    <div id="card-content">
-                        <h2><a href="trainingprogram.html">Chris Bumpstead</a></h2>
-                        <p><a href="trainingprogram.html">Push Pull Legs</a></p>
-                        <div>
-                            <p>4 Weeks</p>
-                            <form action="#" method="post">
-                                <button type="submit" class="">
-                  <i class="fas fa-angle-double-down"></i>
-                </button>
-                            </form>
+            </div>
+            <div id="card">
+                <div id="card-title">
+
+                    <a href="trainingprogram.html"> 
+                        <img src="img/download.jpeg" alt="No picture Available">
+                        <div href="trainingprogram.html"> 
+                            <i class="fas fa-dumbbell fa-3x"></i> 
                         </div>
+                    </a>
+                </div>
+                <div id="card-content">
+                    <h2><a href="trainingprogram.html">Chris Bumpstead</a></h2>
+                    <p><a href="trainingprogram.html">Push Pull Legs</a></p>
+                    <div>
+                        <p>4 Weeks</p>
+                        <form action="#" method="post">
+                            <button type="submit" class="">
+                                <i class="fas fa-angle-double-down"></i>
+                            </button>
+                        </form>
                     </div>
                 </div>
-                <div id="card">
-                    <div id="card-title" class="bg-primary">
-                        <a href="trainingprogram.html"> <i class="fas fa-dumbbell fa-4x"></i> </a>
-                    </div>
-                    <div id="card-content">
-                        <h2><a href="trainingprogram.html">Chris Bumpstead</a></h2>
-                        <p><a href="trainingprogram.html">Push Pull Legs</a></p>
-                        <div>
-                            <p>4 Weeks</p>
-                            <!-- IF YOU ARE NOT LOGGED IN -->
-                            <!-- <form action="#" method="post">
+            </div>
+            <div id="card">
+                <div id="card-title">
+                    <a href="trainingprogram.html"> 
+                        <img src="img/arnold.jpg" alt="No picture available">
+                        <div href="trainingprogram.html"> 
+                            <i class="fas fa-dumbbell fa-3x"></i> 
+                        </div>
+                    </a>
+                </div>
+                <div id="card-content">
+                    <h2><a href="trainingprogram.html">Chris Bumpstead</a></h2>
+                    <p><a href="trainingprogram.html">Push Pull Legs</a></p>
+                    <div>
+                        <p>4 Weeks</p>
+                        <!-- IF YOU ARE NOT LOGGED IN -->
+                        <!-- <form action="#" method="post">
                                 <button type="submit" class="">
                   <i class="fas fa-angle-double-down"></i>
                 </button>
                             </form> -->
-                        </div>
                     </div>
                 </div>
             </div>
-            <div id="paginator">
-                <div class="container">
-                    <a href="trainingprogram.html" class="arrow-l"><i class="fas fa-angle-left"></i></a>
-                    <a href="trainingprogram.html" class="arrow-r"><i class="fas fa-angle-right"></i></i></a>
+        </div>
+        <div id="paginator">
+            <div class="container">
+                <a href="trainingprogram.html" class="arrow-l"><i class="fas fa-angle-left"></i></a>
+                <a href="trainingprogram.html" class="arrow-r"><i class="fas fa-angle-right"></i></i></a>
+            </div>
+        </div>
+        <div id="explanation">
+            <div class="container">
+                <div id="explanation-a">
+                    <p><i class="fas fa-dumbbell"></i> = Hypertrophy program</p>
+                    <p>
+                        <i class="fas fa-balance-scale"></i> = Hypertrophy/Strength program
+                    </p>
+                    <p><i class="fas fa-weight-hanging"></i> = Strength program</p>
+                    <p>
+                        (Click <a href="trainingprogram.html" class="text-secondary">here</a> for more info about each
+                        program type)
+                    </p>
+                </div>
+                <div id="explanation-b">
+                    <p>
+                        <i class="fas fa-angle-double-down text-primary"></i> = non-liked
+                    </p>
+                    <p><i class="fas fa-angle-double-up text-secondary"></i> = liked</p>
+                    <p>(Must be logged in to like,dislike, etc etc ..)</p>
                 </div>
             </div>
-            <div id="explanation">
-                <div class="container">
-                    <div id="explanation-a">
-                        <p><i class="fas fa-dumbbell"></i> = Hypertrophy program</p>
-                        <p>
-                            <i class="fas fa-balance-scale"></i> = Hypertrophy/Strength program
-                        </p>
-                        <p><i class="fas fa-weight-hanging"></i> = Strength program</p>
-                        <p>
-                            (Click <a href="trainingprogram.html" class="text-secondary">here</a> for more info about each program type)
-                        </p>
-                    </div>
-                    <div id="explanation-b">
-                        <p>
-                            <i class="fas fa-angle-double-down text-primary"></i> = non-liked
-                        </p>
-                        <p><i class="fas fa-angle-double-up text-secondary"></i> = liked</p>
-                        <p>(Must be logged in to like,dislike, etc etc ..)</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Footer -->
+    <!-- Footer -->
 
-        <footer id="footer">
-            <div class="footer-content container">
-                <p>Copyright &copy; 2019. All Rights Reserved</p>
-                <div class="social">
-                    <i class="fab fa-twitter"></i>
-                    <i class="fab fa-facebook"></i>
-                    <i class="fab fa-instagram"></i>
-                    <i class="fab fa-linkedin"></i>
-                </div>
+    <footer id="footer">
+        <div class="footer-content container">
+            <p>Copyright &copy; 2019. All Rights Reserved</p>
+            <div class="social">
+                <i class="fab fa-twitter"></i>
+                <i class="fab fa-facebook"></i>
+                <i class="fab fa-instagram"></i>
+                <i class="fab fa-linkedin"></i>
             </div>
-        </footer>
-        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
-        <script src="js/main.js"></script>
-    </body>
+        </div>
+    </footer>
+    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <script src="js/main.js"></script>
+</body>
 
 </html>

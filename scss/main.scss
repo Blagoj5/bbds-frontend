@@ -10,6 +10,7 @@
 @import "cards-programs";
 @import "program";
 @import "forms";
+@import "dashboard";
 // Main Styling
 body,
 html {
@@ -189,6 +190,58 @@ input[type="text"] {
         }
         p {
             margin: 0.5rem 1rem;
+        }
+    }
+}
+
+// Section: About
+#about {
+    text-align: center;
+    padding: 2rem 3rem;
+    h1 {
+        margin-bottom: 3rem;
+        font-size: 2rem;
+    }
+    p {
+        text-align: justify;
+        margin-bottom: 5rem;
+    }
+    #categories-explanation {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-gap: 3rem;
+        margin-bottom: 4rem;
+        padding: 1.4rem 0.8rem;
+        #cat {
+            font-size: 1.2rem;
+            display: grid;
+            box-shadow: $box-shadow-main;
+            transition: 0.4s;
+            &:hover {
+                box-shadow: $box-shadow-hover;
+            }
+            &-upper {
+                background: $primary-color;
+                border-radius: 5px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                i:last-of-type {
+                    margin: 0 7rem;
+                }
+                p {
+                    padding: 0 !important;
+                    margin: 0;
+                    font-weight: 600;
+                    text-transform: uppercase
+                }
+            }
+            &-lower {
+                margin-bottom: 0;
+                padding: 0.3rem 1rem;
+                padding-top: 1rem;
+                font-size: 1rem;
+            }
         }
     }
 }

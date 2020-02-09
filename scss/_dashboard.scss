@@ -1,0 +1,29 @@
+#settings-icon {
+    border: none !important;
+    transition: none !important;
+    font-size: 1.4rem;
+    &:hover {
+        border-color: none !important;
+    }
+}
+
+.settings {
+    // padding-right: 0 !important;
+    #navbar-menu-user {
+        display: none;
+        a {
+            margin-left: 0 !important;
+        }
+    }
+    ul {
+        align-items: center;
+        li:nth-child(4) {
+            margin-right: 2rem !important;
+            margin-left: 9rem;
+            // text-transform: uppercase;
+        }
+        li:last-child {
+            margin-right: 1rem !important;
+        }
+    }
+}
